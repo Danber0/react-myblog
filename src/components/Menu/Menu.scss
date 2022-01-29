@@ -1,0 +1,128 @@
+.right__menu {
+  display: flex;
+  position: fixed;
+  z-index: 2;
+  bottom: 0;
+  top: 0;
+  right: -400px;
+  overflow-x: hidden;
+  transition: 0.5s right ease-in-out;
+  .menu {
+    transition: 0.5s right ease-in-out;
+    position: relative;
+    right: 0;
+    background-color: #13315e;
+    width: 100px;
+    height: 100vh;
+
+    &__stick {
+      display: flex;
+      flex-direction: row-reverse;
+      position: absolute;
+      bottom: 100px;
+      align-items: center;
+      margin-top: 300px;
+      letter-spacing: 0.12em;
+      color: #ffffff;
+      transform: rotate(90deg) rotate(180deg);
+      cursor: pointer;
+
+      .stick {
+        display: flex;
+        margin-right: 20px;
+
+        div {
+          margin-right: -10px;
+          width: 20px;
+          height: 2px;
+          background-color: #fff;
+          transform: rotate(90deg) rotate(180deg);
+        }
+      }
+    }
+  }
+  .menu__active {
+    position: relative;
+    background-color: #13315e;
+    height: 100vh;
+    min-width: 400px;
+
+    .menu__content {
+      color: #fff;
+
+      .menu__info {
+        padding: 30px;
+
+        h5 {
+          display: inline;
+          font-style: normal;
+          font-weight: 800;
+          font-size: 26px;
+          line-height: 52px;
+          color: #ffffff;
+        }
+
+        p {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 52px;
+          color: #ffffff7f;
+        }
+      }
+    }
+
+    .menu__list {
+      ul {
+        li {
+          cursor: pointer;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 52px;
+          color: #ffffff;
+          padding: 13px 30px;
+
+          &:hover {
+            background-color: rgba(114, 114, 114, 0.2);
+          }
+        }
+      }
+    }
+
+    .menu__title {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      background-color: #0a2246;
+      padding: 25px 60px;
+      cursor: pointer;
+
+      svg {
+        margin-right: 10px;
+      }
+
+      h5 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 24px;
+        letter-spacing: 0.12em;
+        color: #ffffff;
+      }
+    }
+  }
+
+  &.active {
+    transition: 0.5s right ease-in-out;
+    right: 0;
+
+    .menu {
+      transition: 0.5s right ease-in-out;
+      right: -100px;
+    }
+  }
+}

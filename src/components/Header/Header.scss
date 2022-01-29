@@ -1,0 +1,41 @@
+.article__header {
+  display: flex;
+  transition: all 0.25s ease-in-out;
+  padding: 20px 0 20px 30px;
+  border-bottom: 1px solid #f9f9f9;
+  margin-right: 20px;
+
+  h4 {
+    flex: 0 1 100%;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
+    a {
+      color: #1373e2;
+    }
+  }
+
+  span,
+  a {
+    cursor: pointer;
+    &:not(:last-child) {
+      svg {
+        margin-right: 25px;
+      }
+    }
+  }
+
+  &.active {
+    background-color: #f8fafe;
+    padding-right: 25px;
+
+    input {
+      outline: none;
+      border: none;
+      background-color: #f8fafe;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
