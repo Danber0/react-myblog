@@ -43,7 +43,7 @@ export const Menu = ({
     (async () => {
       if (isAuth) {
         try {
-          const res = await axios.get(`http://localhost:5656/users/${id}`);
+          const res = await axios.get(`/users/${id}`);
           const result = res.data;
           setUserInfo(result);
         } catch (error) {}

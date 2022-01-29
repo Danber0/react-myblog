@@ -13,14 +13,11 @@ export const fetchPosts = (pages) => async (dispatch) => {
     dispatch({
       type: "SET_IS_LOAD_TRUE",
     });
-    const res = await axios.get(
-      `http://localhost:5656/posts?limit=3&page=${pages}`,
-      {
-        headers: {
-          Authorization: token,
-        },
-      }
-    );
+    const res = await axios.get(`/posts?limit=3&page=${pages}`, {
+      headers: {
+        Authorization: token,
+      },
+    });
     dispatch({
       type: "SET_IS_LOAD_FALSE",
     });
@@ -36,7 +33,7 @@ export const fetchPosts = (pages) => async (dispatch) => {
 export const currentPost = (id) => async (dispatch) => {
   const { token } = JSON.parse(localStorage.getItem("userInfo")) || [];
   try {
-    const res = await axios.get(`http://localhost:5656/posts/${id}`, {
+    const res = await axios.get(`/posts/${id}`, {
       headers: {
         Authorization: token,
       },
@@ -56,19 +53,15 @@ export const addNewPost = (post, file) => async (dispatch) => {
   try {
     let fileUrl;
     if (file) {
-      let fileRes = await axios.post(
-        "http://localhost:5656/posts/upload",
-        file,
-        {
-          headers: {
-            "Content-type": "multipart/form-data",
-          },
-        }
-      );
+      let fileRes = await axios.post("/posts/upload", file, {
+        headers: {
+          "Content-type": "multipart/form-data",
+        },
+      });
       fileUrl = fileRes.data.url;
     }
     const res = await axios.post(
-      `http://localhost:5656/posts`,
+      `/posts`,
       {
         title: post.title,
         text: post.fullText,
@@ -95,19 +88,15 @@ export const editPost = (post, file, id, fileCheck) => async (dispatch) => {
   try {
     let fileUrl: string;
     if (fileCheck) {
-      let fileRes = await axios.post(
-        "http://localhost:5656/posts/upload",
-        file,
-        {
-          headers: {
-            "Content-type": "multipart/form-data",
-          },
-        }
-      );
+      let fileRes = await axios.post("/posts/upload", file, {
+        headers: {
+          "Content-type": "multipart/form-data",
+        },
+      });
       fileUrl = fileRes.data.url;
     }
     const res = await axios.patch(
-      `http://localhost:5656/posts/${id}`,
+      `/posts/${id}`,
       {
         title: post.title,
         text: post.description,
@@ -132,13 +121,13 @@ export const editPost = (post, file, id, fileCheck) => async (dispatch) => {
 
 export const removePost = (id) => async (dispatch) => {
   const { token } = JSON.parse(localStorage.getItem("userInfo")) || [];
-  await axios.delete(`http://localhost:5656/posts/${id}`, {
+  await axios.delete(`/posts/${id}`, {
     headers: {
       Authorization: token,
     },
   });
 
-  await axios.get(`http://localhost:5656/comments/post/${id}`, {
+  await axios.get(`/comments/post/${id}`, {
     headers: {
       Authorization: token,
     },
@@ -151,9 +140,7 @@ export const removePost = (id) => async (dispatch) => {
 
 export const fetchComments = (postId) => async (dispatch) => {
   try {
-    const { data } = await axios.get(
-      `http://localhost:5656/comments/post/${postId}`
-    );
+    const { data } = await axios.get(`/comments/post/${postId}`);
     return dispatch({
       type: "FETCH_COMMENTS",
       payload: data,
@@ -167,7 +154,7 @@ export const addNewComments = (text, postId) => async (dispatch) => {
   const { token } = JSON.parse(localStorage.getItem("userInfo")) || [];
   try {
     const { data } = await axios.post(
-      "http://localhost:5656/comments",
+      "/comments",
       {
         text,
         postId,

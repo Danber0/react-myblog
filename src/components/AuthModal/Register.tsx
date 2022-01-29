@@ -18,7 +18,7 @@ export const Register: React.FC = ({ handleCloseModal }) => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5656/auth/register", {
+      const res = await axios.post("/auth/register", {
         fullName: inputValue.fullName,
         email: inputValue.email,
         password: inputValue.password,

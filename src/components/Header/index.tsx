@@ -25,7 +25,7 @@ export const Header = ({ createArticle }) => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5656/posts?query=${inputValue}&limit=3`)
+      .get(`/posts?query=${inputValue}&limit=3`)
       .then(({ data }) => dispatch(findPost(data)));
   }, [value]);
 

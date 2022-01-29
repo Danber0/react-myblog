@@ -40,9 +40,7 @@ export const FullArticle = () => {
         <Fragment key={user._id}>
           <div className="article__full-top">
             <img
-              src={`http://localhost:5656/${
-                user.photoUrl || "/uploads/no-image.png"
-              }`}
+              src={`/${user.photoUrl || "/uploads/no-image.png"}`}
               alt="img"
             />
             <div className="article__full-top-inside">

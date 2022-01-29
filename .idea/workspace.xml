@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a0a3c0a9-bc9e-4a87-b913-01977b8ba46a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/react-myblog.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-api/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/blog-api/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-api/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog-api/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Article/FullArticle/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Article/FullArticle/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Article/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Article/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AuthModal/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AuthModal/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AuthModal/Register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AuthModal/Register.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainContent/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContent/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Menu/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/postUser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/postUser.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="24O3RVvbGHsfYmDDGtE27c1uf4R" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\Danber\AppData\Roaming\npm\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="ts.external.directory.path" value="D:\React\react-myblog\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\React\react-myblog" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a0a3c0a9-bc9e-4a87-b913-01977b8ba46a" name="Changes" comment="" />
+      <created>1643487799986</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1643487799986</updated>
+      <workItem from="1643487802683" duration="2413000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

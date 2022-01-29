@@ -13,7 +13,7 @@ export const Profile = () => {
   useEffect(() => {
     const { token, id } = JSON.parse(localStorage.getItem("userInfo")) || [];
     axios
-      .get(`http://localhost:5656/users/${id}`, {
+      .get(`/users/${id}`, {
         headers: {
           Authorization: token,
         },
@@ -74,10 +74,7 @@ export const Profile = () => {
                     </div>
                   </div>
                   <div className="article__image">
-                    <img
-                      src={`http://localhost:5656/${info.photoUrl}`}
-                      alt="img"
-                    />
+                    <img src={`/${info.photoUrl}`} alt="img" />
                   </div>
                 </div>
               ))}

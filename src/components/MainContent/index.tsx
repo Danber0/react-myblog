@@ -21,16 +21,19 @@ import { InitialStateAuth } from "../../types";
 export const MainContent = () => {
   const dispatch = useDispatch();
   const { isAuth } = useSelector((state: InitialStateAuth) => state.authUser);
-  const [showModal, setShowModal] = React.useState<"signIn" | "signUp">();
+  const [showModal, setShowModal] = React.useState<
+    "signIn" | "signUp" | null
+  >();
   const [currentArticle, setCurrentArticle] = useState([]);
   const [currentPostId, setCurrentPostId] = React.useState("");
   const [showCreateArticle, setShowCreateArticle] = React.useState(false);
 
   React.useEffect(() => {
+    // @ts-ignore
     const { token } = JSON.parse(localStorage.getItem("userInfo")) || [];
     if (token && token) {
       axios
-        .get("http://localhost:5656/auth/me", {
+        .get("/auth/me", {
           headers: {
             Authorization: token,
           },
@@ -48,7 +51,7 @@ export const MainContent = () => {
     setShowCreateArticle(true);
   };
 
-  const editArticle = (current): void => {
+  const editArticle = (current: any): void => {
     setCurrentArticle(current);
   };
 
