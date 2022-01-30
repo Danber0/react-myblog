@@ -115,7 +115,7 @@ export const Article: React.FC<ArticleProps> = ({
                         </div>
                         <div className="article__image">
                           <img
-                            src={`/${post.photoUrl || "/uploads/no-image.png"}`}
+                            src={`${post.photoUrl || "/uploads/no-image.png"}`}
                             alt="img"
                           />
                         </div>
